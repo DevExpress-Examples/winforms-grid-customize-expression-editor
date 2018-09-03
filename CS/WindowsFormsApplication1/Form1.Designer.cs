@@ -23,24 +23,23 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.components = new System.ComponentModel.Container();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumnProductName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumnSupplierID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumnUnitsOnOrder = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumnDiscontinued = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumnExpression = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.barManager1 = new DevExpress.XtraBars.BarManager();
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.bar3 = new DevExpress.XtraBars.Bar();
-            this.barAndDockingController1 = new DevExpress.XtraBars.BarAndDockingController(this.components);
+            this.barAndDockingController1 = new DevExpress.XtraBars.BarAndDockingController();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.gridColumnUnitsOnOrder = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumnDiscontinued = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
@@ -91,9 +90,25 @@
             this.gridColumnSupplierID.Visible = true;
             this.gridColumnSupplierID.VisibleIndex = 1;
             // 
+            // gridColumnUnitsOnOrder
+            // 
+            this.gridColumnUnitsOnOrder.Caption = "Units On Order";
+            this.gridColumnUnitsOnOrder.FieldName = "UnitsOnOrder";
+            this.gridColumnUnitsOnOrder.Name = "gridColumnUnitsOnOrder";
+            this.gridColumnUnitsOnOrder.Visible = true;
+            this.gridColumnUnitsOnOrder.VisibleIndex = 2;
+            // 
+            // gridColumnDiscontinued
+            // 
+            this.gridColumnDiscontinued.Caption = "Discontinued";
+            this.gridColumnDiscontinued.FieldName = "Discontinued";
+            this.gridColumnDiscontinued.Name = "gridColumnDiscontinued";
+            this.gridColumnDiscontinued.Visible = true;
+            this.gridColumnDiscontinued.VisibleIndex = 3;
+            // 
             // gridColumnExpression
             // 
-            this.gridColumnExpression.Caption = "gridColumn3";
+            this.gridColumnExpression.Caption = "Expression";
             this.gridColumnExpression.FieldName = "gridColumnExpression";
             this.gridColumnExpression.Name = "gridColumnExpression";
             this.gridColumnExpression.ShowUnboundExpressionMenu = true;
@@ -198,22 +213,6 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(892, 34);
             this.panelControl1.TabIndex = 1;
-            // 
-            // gridColumnUnitsOnOrder
-            // 
-            this.gridColumnUnitsOnOrder.Caption = "Units On Order";
-            this.gridColumnUnitsOnOrder.FieldName = "UnitsOnOrder";
-            this.gridColumnUnitsOnOrder.Name = "gridColumnUnitsOnOrder";
-            this.gridColumnUnitsOnOrder.Visible = true;
-            this.gridColumnUnitsOnOrder.VisibleIndex = 2;
-            // 
-            // gridColumnDiscontinued
-            // 
-            this.gridColumnDiscontinued.Caption = "Discontinued";
-            this.gridColumnDiscontinued.FieldName = "Discontinued";
-            this.gridColumnDiscontinued.Name = "gridColumnDiscontinued";
-            this.gridColumnDiscontinued.Visible = true;
-            this.gridColumnDiscontinued.VisibleIndex = 3;
             // 
             // Form1
             // 
