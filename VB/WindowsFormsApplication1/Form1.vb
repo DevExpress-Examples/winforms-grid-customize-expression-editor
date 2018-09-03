@@ -7,6 +7,7 @@ Imports DevExpress.DataAccess.UI.Native.ExpressionEditor
 Imports DevExpress.LookAndFeel
 Imports DevExpress.XtraEditors
 Imports System
+Imports System.Collections.Generic
 Imports System.Drawing
 Imports System.Linq
 
@@ -14,9 +15,44 @@ Namespace WindowsFormsApplication1
     Partial Public Class Form1
         Inherits XtraForm
 
+        Public Class Product
+            Public Sub New(productID As Integer, productName As String, category As Category)
+                Me.ProductID = productID
+                Me.ProductName = productName
+                Me.Category = category
+            End Sub
+
+            Public ReadOnly Property ProductID As Integer
+            Public ReadOnly Property ProductName As String
+            Public ReadOnly Property SupplierID As Integer?
+            Public ReadOnly Property CategoryID As Integer?
+            Public ReadOnly Property UnitsOnOrder As Short?
+            Public ReadOnly Property Discontinued As Boolean
+            Public ReadOnly Property Category As Category
+        End Class
+
+        Public Class Category
+            Public Property CategoryID As Integer
+            Public Property CategoryName As String
+        End Class
+
+        Public Function GetProductsList() As List(Of Product)
+            Dim categoryBeverages = New Category With {.CategoryID = 1, .CategoryName = "Beverages"}
+            Dim categoryConfections = New Category With {.CategoryID = 2, .CategoryName = "Condiments"}
+
+            Return New List(Of Product) From {
+                New Product(1, "Chai", categoryBeverages),
+                New Product(2, "Chang", categoryBeverages),
+                New Product(3, "Coffee", categoryBeverages),
+                New Product(4, "Chocolade", categoryConfections),
+                New Product(5, "Maxilaku", categoryConfections),
+                New Product(6, "Valkoinen suklaa", categoryConfections)
+            }
+        End Function
+
         Public Sub New()
             InitializeComponent()
-            Me.sqlDataSource1.Fill()
+            Me.gridControl1.DataSource = GetProductsList()
         End Sub
 
         Private Sub gridView1_UnboundExpressionEditorCreated(ByVal sender As Object, ByVal e As DevExpress.XtraGrid.Views.Base.UnboundExpressionEditorEventArgs) Handles gridView1.UnboundExpressionEditorCreated
@@ -53,23 +89,23 @@ Namespace WindowsFormsApplication1
     Friend Class ValidatorProvider
         Implements ICriteriaOperatorValidatorProvider
 
-        #Region "Implementation of ICriteriaOperatorValidatorProvider"
+#Region "Implementation of ICriteriaOperatorValidatorProvider"
 
         Public Function GetCriteriaOperatorValidator(ByVal context As ExpressionEditorContext) As ErrorsEvaluatorCriteriaValidator Implements ICriteriaOperatorValidatorProvider.GetCriteriaOperatorValidator
             Return New Validator(context)
         End Function
 
-        #End Region
+#End Region
     End Class
 
     Friend Class Validator
         Inherits CriteriaOperatorValidator
 
         Public Sub New(ByVal context As ExpressionEditorContext)
-            MyBase.New(context, supportsAggregates:= True)
+            MyBase.New(context, supportsAggregates:=True)
         End Sub
 
-        #Region "Overrides of CriteriaOperatorValidator"
+#Region "Overrides of CriteriaOperatorValidator"
 
         Public Overrides Sub Visit(ByVal theOperator As FunctionOperator)
             If theOperator.OperatorType = FunctionOperatorType.Now Then
@@ -78,7 +114,7 @@ Namespace WindowsFormsApplication1
             MyBase.Visit(theOperator)
         End Sub
 
-        #End Region
+#End Region
     End Class
 
 
@@ -109,13 +145,13 @@ Namespace WindowsFormsApplication1
     Public Class CustomExpressionEditorControl
         Inherits ExpressionEditorControl
 
-        #Region "Overrides of ExpressionEditorControl"
+#Region "Overrides of ExpressionEditorControl"
 
         Protected Overrides Function CreateDocumentationControl() As ExpressionDocumentationControl
             Return Nothing
         End Function
 
-        #End Region
+#End Region
     End Class
 
 End Namespace
