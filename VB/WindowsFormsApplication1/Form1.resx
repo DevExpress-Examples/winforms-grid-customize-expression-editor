@@ -117,12 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>25, 16</value>
-  </metadata>
-  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZT0iT3JkZXJJRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2R1Y3RJRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlVuaXRQcmljZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUXVhbnRpdHkiIFR5cGU9IkludDE2IiAvPjxGaWVsZCBOYW1lPSJEaXNjb3VudCIgVHlwZT0iU2luZ2xlIiAvPjwvVmlldz48VmlldyBOYW1lPSJDYXRlZ29yaWVzIj48RmllbGQgTmFtZT0iQ2F0ZWdvcnlJRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNhdGVnb3J5TmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQaWN0dXJlIiBUeXBlPSJCeXRlQXJyYXkiIC8+PC9WaWV3PjxSZWxhdGlvbiBNYXN0ZXI9IlF1ZXJ5IiBEZXRhaWw9IkNhdGVnb3JpZXMiPjxLZXlDb2x1bW4gTWFzdGVyPSJVbml0UHJpY2UiIERldGFpbD0iRGVzY3JpcHRpb24iIC8+PEtleUNvbHVtbiBNYXN0ZXI9IlByb2R1Y3RJRCIgRGV0YWlsPSJDYXRlZ29yeU5hbWUiIC8+PEtleUNvbHVtbiBNYXN0ZXI9IlByb2R1Y3RJRCIgRGV0YWlsPSJEZXNjcmlwdGlvbiIgLz48L1JlbGF0aW9uPjwvRGF0YVNldD4=</value>
-  </data>
   <metadata name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>177, 17</value>
   </metadata>
