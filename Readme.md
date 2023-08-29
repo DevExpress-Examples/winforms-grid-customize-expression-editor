@@ -3,11 +3,26 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T501883)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# How to customize the Expression Editor
+# WinForms Data Grid - Customize the Expression Editor
 
+This example shows how to customize the [Expression Editor](https://docs.devexpress.com/WindowsForms/6212/common-features/expressions/expression-editor) as follows:
 
-This example illustrates the API available for customizing the new <a href="https://documentation.devexpress.com/#WindowsForms/CustomDocument6212">Expression Editor</a> version. In this demo application, the following changes are made to the Expression Editor.<br><br>1. The "<strong>Now</strong>" function is removed from the list of date-time functions and is not allowed for use in expressions (a custom validator displays an error on an attempt to use this function).<br>2. Capitalization of function names is disabled.<br>3. A custom color provider is implemented to use a custom palette for syntax highlighting.<br>4. The "<strong>Columns</strong>" category is renamed to "<strong>Fields</strong>".<br>5. A custom Expression Editor view is implemented (to display only specific parts of the editor).<br><br><img src="https://raw.githubusercontent.com/DevExpress-Examples/how-to-customize-the-expression-editor-t501883/17.1.3+/media/0d5733f1-1de3-11e7-80bf-00155d62480c.png"><br><br>To invoke the Expression Editor, right-click the custom column in the grid control and select the corresponding command in the context menu.<br><img src="https://raw.githubusercontent.com/DevExpress-Examples/how-to-customize-the-expression-editor-t501883/17.1.3+/media/3883389e-1ddd-11e7-80bf-00155d62480c.png">
+* Remove the **Now** function from the list of Date-Time functions and prevent users from using this function in expressions (display an error message).
+* Disable capitalization of function names.
+* Implement a color provider to use a custom palette for syntax highlighting.
+* Rename the **Columns** category to **Fields**.
+* Implement a custom Expression Editor view to display only specific UI elements of the Expression Editor.
 
-<br/>
+![Customize WinForms Expression Editor](https://raw.githubusercontent.com/DevExpress-Examples/how-to-customize-the-expression-editor-t501883/17.1.3+/media/0d5733f1-1de3-11e7-80bf-00155d62480c.png)
 
+Right-click the **Expression** column header and select the **Expression Editor...** command in the context menu to invoke the Expression Editor.
 
+![Show Expression Editor](https://raw.githubusercontent.com/DevExpress-Examples/how-to-customize-the-expression-editor-t501883/17.1.3+/media/3883389e-1ddd-11e7-80bf-00155d62480c.png)
+
+## Files to Review
+
+* [Form1.cs](./CS/WindowsFormsApplication1/Form1.cs) (VB: [Form1.vb](./VB/WindowsFormsApplication1/Form1.vb))
+
+## Documentation
+
+* [Expression Editor](https://docs.devexpress.com/WindowsForms/6212/common-features/expressions/expression-editor)
