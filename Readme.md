@@ -14,7 +14,7 @@ This example shows how to customize the [Expression Editor](https://docs.devexp
 * Rename the **Columns** category to **Fields**.
 * Implement a custom Expression Editor view to display only specific UI elements of the Expression Editor.
 
-![Customize WinForms Expression Editor](https://raw.githubusercontent.com/DevExpress-Examples/how-to-customize-the-expression-editor-t501883/17.1.3+/media/0d5733f1-1de3-11e7-80bf-00155d62480c.png)
+![Customize WinForms Expression Editor](media/0d5733f1-1de3-11e7-80bf-00155d62480c.png)
 
 Right-click the **Expression** column header and select the **Expression Editor...** command in the context menu to invoke the Expression Editor.
 
@@ -34,3 +34,4 @@ Right-click the **Expression** column header and select the **Expression Editor.
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
