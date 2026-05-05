@@ -18,7 +18,7 @@ This example shows how to customize the [Expression Editor](https://docs.devexp
 
 Right-click the **Expression** column header and select the **Expression Editor...** command in the context menu to invoke the Expression Editor.
 
-![Show Expression Editor](https://raw.githubusercontent.com/DevExpress-Examples/how-to-customize-the-expression-editor-t501883/17.1.3+/media/3883389e-1ddd-11e7-80bf-00155d62480c.png)
+![Show Expression Editor](media/3883389e-1ddd-11e7-80bf-00155d62480c.png)
 
 ## Files to Review
 
